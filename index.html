@@ -1,57 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Content Website</title>
-  <!-- Link to Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    /* Custom styles (if needed) */
-    body {
-      font-family: Arial, sans-serif;
-    }
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="images/favicon.png" rel="icon" />
+<title>Digital Collections</title>
+<meta name="description" content="Scott is responsive nft minting and collection landing page bootstrap 5 html template.">
+<meta name="author" content="harnishdesign.net">
 
-    .sidebar {
-      height: 100%;
-    }
-  </style>
+<!-- Web Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+<!-- Owl Carousel -->
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+<!-- Template Stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 </head>
 
-<body>
-  <!-- Header -->
-  <header class="bg-primary text-white text-center py-3">
-    <h1>Digital Collections</h1>
-  </header>
-<div style="text-align:center; padding:50px;"><h2>Coming Soon</h2></div>
-  <div class="container-fluid">
-    <div class="row">
-      <!-- Left Sidebar -->
-      
+<body data-bs-spy="scroll" data-bs-target="#header-nav" data-bs-smooth-scroll="true" data-bs-offset="0" class="hero-bg" style="background-image:url('images/bg.png');">
 
-      <!-- Main Content -->
-      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <section id="section1">
-          
-          
-        </section>
-        <section id="section2">
-          
-          
-        </section>
+<!-- Preloader -->
+<div class="preloader preloader-dark">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top-slide"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dark bg-transparent fw-500">
+  
         
-        <!-- Add more sections as needed -->
-      </main>
+        <div class="col col-lg-12 navbar-accordion">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav"><span></span><span></span><span></span></button>
+          <div id="header-nav" class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+              <li class="nav-item"><a class="nav-link" href="#collections">Collections</a></li>
+              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li> -->
+              <!-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#">Pages</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Home Pages</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="index.html">Home 01</a></li>
+                      <li><a class="dropdown-item" href="index-2.html">Home 02</a></li>
+					  <li><a class="dropdown-item" href="index-3.html">Home 03</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="mint.html">Mint Page</a></li>
+                  <li><a class="dropdown-item" href="collections.html">Collections</a></li>
+                  <li><a class="dropdown-item" href="coming-soon.html">Comming Soon</a></li>
+                  <li><a class="dropdown-item" href="404.html">404</a></li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Blog</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="blog.html">Blog Grid</a></li>
+                      <li><a class="dropdown-item" href="blog-list.html">Blog List</a></li>
+                      <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                </ul>
+              </li> -->
+             
+            </ul>
+          </div>
+        </div>
+      
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Connect Wallet - Offcanvas menu
+====================================== -->
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <h4 class="text-white fw-600 text-center mb-4" id="offcanvasLabel"><span class="me-1"><i class="fas fa-wallet"></i></span> Connect Wallet</h4>
+      <div class="text-white-50 text-center mb-4">Choose how you want to connect. There are several wallet providers.</div>
+      <div class="list-group connect-wallet"> <a href="#" class="list-group-item list-group-item-action" aria-current="true"> <img class="img-fluid d-flex me-2" src="images/wallet/metamask.png" alt=""> MetaMask <span class="badge bg-info ms-auto">Popular</span> </a> <a href="#" class="list-group-item list-group-item-action" aria-current="true"> <img class="img-fluid d-flex me-2" src="images/wallet/wallet-connect.png" alt=""> Wallet Connect </a> <a href="#" class="list-group-item list-group-item-action" aria-current="true"> <img class="img-fluid d-flex me-2" src="images/wallet/coinbase.png" alt=""> Coinbase </a> <a href="#" class="list-group-item list-group-item-action" aria-current="true"> <img class="img-fluid d-flex me-2" src="images/wallet/fortmatic.png" alt=""> Fortmatic </a> <a href="#" class="list-group-item list-group-item-action" aria-current="true"> <img class="img-fluid d-flex me-2" src="images/wallet/myetherwallet.png" alt=""> MyEtherWallet</a> </div>
     </div>
   </div>
-
-  <!-- Footer -->
-  <footer class="bg-light text-center py-3 mt-5">
-    <p>&copy; 2023 C# Corner. All rights reserved.</p>
+  <!-- Connect Wallet - Offcanvas menu End --> 
+  
+  <!-- Content
+  ======================== -->
+  <div id="content" role="main"> 
+    
+    <!-- Intro
+    ========================= -->
+    <section id="home">
+      <div class="hero-wrap">
+        <div class="hero-content section pb-0 d-flex min-vh-100">
+          <div class="container py-5 my-auto">
+            <div class="row gy-5 g-lg-4">
+              <div class="col-md-6 my-auto text-center text-md-start pt-5 pt-md-0 order-2 order-md-1">
+                <h1 class="text-17 fw-600 text-white">The Scott<br class="d-none d-md-block">
+                  NFT Collection</h1>
+                <p class="text-4 text-light mb-4">The Scort Art studio is a private collection of NFTs unique digital collectibles. Simply dummy text of the printing and typesetting industry quidam interesset his et essent possim iriure.</p>
+                <a href="mint.html" class="btn btn-primary rounded-pill">Mint Now <span class="text-2 ms-2"><i class="fa fa-chevron-right"></i></span></a> </div>
+              <div class="col-md-6 pb-5 pb-md-0 order-1 order-md-2"> 
+                <!-- Parallax Mouse Move -->
+                <div id="scene" data-relative-input="true" class="scene">
+                  <div data-depth="0.6" class="ms-5 mt-md-n5"><img class="img-fluid rounded-4 shadow-lg" src="images/collections/item-3.jpg" alt=""></div>
+                  <div data-depth="0.3" class="top-50 start-0 ms-n3 mt-md-5"><img class="img-fluid rounded-4 shadow-lg" src="images/collections/item-1.jpg" alt=""></div>
+                  <div data-depth="0.4" class="top-50 start-50 mt-n4"><img class="img-fluid rounded-4 shadow-lg" src="images/collections/item-2.jpg" alt=""></div>
+                </div>
+                <!-- Parallax Mouse Move End --> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Intro end --> 
+    
+    <!-- Number -->
+    <div class="mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div class="hero-wrap py-3">
+              <div class="hero-mask rounded-4 opacity-7 bg-dark"></div>
+              <div class="hero-content text-center py-4 px-3">
+                <h4 class="text-11 text-white fw-600 mb-0">2999</h4>
+                <div class="text-4 text-light">Total Items</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="hero-wrap py-3">
+              <div class="hero-mask rounded-4 opacity-7 bg-dark"></div>
+              <div class="hero-content text-center py-4 px-3">
+                <h4 class="text-11 text-white fw-600 mb-0">1076</h4>
+                <div class="text-4 text-light">Total Owners</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="hero-wrap py-3">
+              <div class="hero-mask rounded-4 opacity-7 bg-dark"></div>
+              <div class="hero-content text-center py-4 px-3">
+                <h4 class="text-11 text-white fw-600 mb-0">0.25</h4>
+                <div class="text-4 text-light">Floor Price (ETH)</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="hero-wrap py-3">
+              <div class="hero-mask rounded-4 opacity-7 bg-dark"></div>
+              <div class="hero-content text-center py-4 px-3">
+                <h4 class="text-11 text-white fw-600 mb-0">445K</h4>
+                <div class="text-4 text-light">Volume Traded</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Number end --> 
+    
+    <!-- About
+    ========================== -->
+    <section id="about" class="section">
+      <div class="container"> 
+        <!-- Heading -->
+        <div class="position-relative d-flex text-center mb-5">
+          <h2 class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0">About Us</h2>
+          <p class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0">Our Story<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+        </div>
+        <!-- Heading end-->
+        
+        <div class="row">
+          <div class="col-lg-6 position-relative">
+            <div class="about-img">
+              <div class="img-1"><img class="img-fluid rounded-4 shadow-lg" src="images/collections/item-4.jpg" alt=""></div>
+              <div class="img-2"><img class="img-fluid rounded-4 shadow-lg" src="images/collections/item-5.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center text-lg-start">
+            <h2 class="text-12 text-white fw-600 mb-3">Welcome to The Scott Art Studio.</h2>
+            <p class="text-5 text-white">The Scort Art studio is a private collection of NFTs unique digital collectibles. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p class="text-light">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <a class="btn btn-primary rounded-pill mt-2" href="#join">Join Our Discord <span class="text-2 ms-2"><i class="fa fa-chevron-right"></i></span></a> </div>
+        </div>
+      </div>
+    </section>
+    <!-- About end --> 
+    
+    
+  <!-- Footer
+  ============================== -->
+  <footer id="footer" class="section footer-dark my-4">
+    <div class="container"> 
+      <!-- Social Icon -->
+      <ul class="social-icons social-icons-dark social-icons-lg justify-content-center mb-4">
+        <li class="social-icons-discord"><a data-bs-toggle="tooltip" href="http://www.discord.com" target="_blank" title="Discord"><i class="fab fa-discord"></i></a></li>
+        <li class="social-icons-facebook"><a data-bs-toggle="tooltip" href="http://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="social-icons-twitter"><a data-bs-toggle="tooltip" href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li class="social-icons-instagram"><a data-bs-toggle="tooltip" href="http://www.dribbble.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+        <li class="social-icons-telegram"><a data-bs-toggle="tooltip" href="http://www.telegram.com" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
+      </ul>
+      <!-- Copyright Text -->
+      <p class="text-center mb-4">Copyright © 2023. All Rights Reserved.</p>
+      <!-- Other Links -->
+      <ul class="nav nav-sm justify-content-center">
+        <li class="nav-item"> <a class="nav-link" data-bs-toggle="modal" data-bs-target="#security" href="#">Security</a></li>
+        <li class="nav-item"> <a class="nav-link" data-bs-toggle="modal" data-bs-target="#terms" href="#">Terms</a></li>
+        <li class="nav-item"> <a class="nav-link" data-bs-toggle="modal" data-bs-target="#privacy" href="#">Privacy</a></li>
+      </ul>
+    </div>
   </footer>
+  <!-- Footer end --> 
+  
+</div>
+<!-- Document Wrapper end --> 
 
+<!-- Back to Top
+============================== --> 
+<a id="back-to-top" data-bs-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
 
+<!-- Security Modal
+================================== -->
+<div id="security" class="modal fade" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Security</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        <ul class="lh-lg">
+          <li>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</li>
+          <li>Quidam lisque persius interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</li>
+          <li>In quot quidam persequeris vim, ad mea essent possim iriure. Quidam lisque persius interesset his et.</li>
+          <li>Quidam lisque persius interesset his et, Lisque persius interesset his et.</li>
+          <li>Interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</li>
+          <li>Persius interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</li>
+          <li>Quot quidam persequeris vim Quidam lisque persius interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Security Modal End --> 
+
+<!-- Terms Modal
+================================== -->
+<div id="terms" class="modal fade" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Terms</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <h3 class="mb-3 mt-4 mt-4">Terms of Use</h3>
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Simply dummy text of the printing and typesetting industry.</p>
+        <h5 class="text-4 mt-4">Part I – Information Scott collects and controls</h5>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <h5 class="text-4 mt-4">Part II – Information that Scott processes on your behalf</h5>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <h5 class="text-4 mt-4">Part III – General</h5>
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Terms Modal End --> 
+
+<!-- Privacy Modal
+================================== -->
+<div id="privacy" class="modal fade" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Privacy Policy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        <ul class="lh-lg">
+          <li>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</li>
+          <li>Quidam lisque persius interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</li>
+          <li>In quot quidam persequeris vim, ad mea essent possim iriure. Quidam lisque persius interesset his et.</li>
+          <li>Quidam lisque persius interesset his et, Lisque persius interesset his et.</li>
+          <li>Interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</li>
+          <li>Persius interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</li>
+          <li>Quot quidam persequeris vim Quidam lisque persius interesset his et, Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Privacy Modal End --> 
+
+<!-- JavaScript --> 
+<script src="vendor/jquery/jquery.min.js"></script> 
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Owl Carousel --> 
+<script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
+<!-- Parallax Mouse Move --> 
+<script src="vendor/parallax/parallax.min.js"></script> 
+<!-- Custom Script --> 
+<script src="js/theme.js"></script>
 </body>
-
 </html>
